@@ -6,6 +6,8 @@ import lombok.experimental.Accessors;
 
 @Builder
 @Accessors(fluent = true)
-public record SolveOut(String idAccount) implements Serializable {
+public record SolveOut(
+    String idAccount
+) implements Serializable {
     private static final long serialVersionUID = 1L;
 }
