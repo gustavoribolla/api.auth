@@ -6,8 +6,10 @@ import lombok.Builder;
 import lombok.experimental.Accessors;
 
 @Builder @Accessors(fluent = true)
-public record TokenOut implements Serializable(
+public record TokenOut(
     private static final long serialVersionUID = 1L;
     String id,
     String token
-) {}
+) implements Serializable {
+    private static final long serialVersionUID = 1L;
+}
